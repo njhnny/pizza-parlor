@@ -1,7 +1,7 @@
-## pizza parlour
+# Pizza Parlour
 Created: 11/11/2020
-# by Nick Hennessy
-A form to order your favorite pizza.
+## by Nick Hennessy
+A form to order your favorite kind of pizza.
 ## Technologies used
 * html
 * CSS
@@ -20,6 +20,12 @@ Navigate to the project's github page in your browser and download the code usin
 ### View Online
 https://github.com.io/njhnny/pizza-parlor
 ### Specs
+Describe: toppingsPrice  
+Test: When set to any size, each selected topping should add $1 to the total cost.  
+Expect: an input of Size: Small + Topping: Pineapple should produce a price of $11.  
+Describe: sizePrice  
+Test: The base cost (small) is set at $10. Selecting Medium will add $2 to the base price, while selecting Large will add $5 to the base cost.  
+Expect: Choosing a Large pizza will result in a price of $15 plus one dollar for each topping selected.
 ## Contact
 njhnny@gmail.com
 ## License
