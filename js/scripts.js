@@ -28,9 +28,8 @@ $(document).ready(function() {
   });
   let pizzaObject = new Pizza(sizePick, toppingsPick, 10);
   console.log(pizzaObject);
-  
   pizzaObject.toppingsPrice();
   pizzaObject.sizePrice();
-  console.log("based on the toppings and size your price is " + pizzaObject.price)
+  $("p").text("based on the toppings and size your price is $" + pizzaObject.price);
 });
 });
