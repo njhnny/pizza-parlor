@@ -23,13 +23,13 @@ $(document).ready(function() {
     event.preventDefault();
     const sizePick = $("#size").val();
     const toppingsPick = [];
-    $(".toppings:checked").each(function(){
+  $(".toppings:checked").each(function(){
     toppingsPick.push($(this).val());
   });
     let pizzaObject = new Pizza(sizePick, toppingsPick, baseCost);
     console.log(pizzaObject);
     pizzaObject.toppingsPrice();
     pizzaObject.sizePrice();
-    $("p").text("based on the toppings and size your price is $" + pizzaObject.price);
+    $("p").text("Based on the toppings and size your price is $" + pizzaObject.price);
   });
 });
