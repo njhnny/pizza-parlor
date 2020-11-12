@@ -10,7 +10,11 @@ Pizza.prototype.toppingsPrice = function() {
 };
 
 Pizza.prototype.sizePrice = function() {
-
+  if (this.size === "medium") {
+    this.price = (2 + this.price);
+  } else if (this.size === "large") {
+    this.price = (5 + this.price);
+  }
 };
 
 //ui logic
@@ -26,6 +30,7 @@ $(document).ready(function() {
   console.log(pizzaObject);
   
   pizzaObject.toppingsPrice();
-  console.log("based on the toppings your price is " + pizzaObject.price)
+  pizzaObject.sizePrice();
+  console.log("based on the toppings and size your price is " + pizzaObject.price)
 });
 });
