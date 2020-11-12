@@ -18,7 +18,7 @@ or
 
 Navigate to the project's github page in your browser and download the code using the green button in the top right corner.
 ### View Online
-https://github.com/io/njhnny/pizza-parlor
+https://github.com.io/njhnny/pizza-parlor
 ### Specs
 ## Contact
 njhnny@gmail.com
