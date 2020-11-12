@@ -5,6 +5,11 @@ this.toppings = toppings;
 this.price = price;
 };
 
+Pizza.prototype.sizePrice = function() {
+  console.log("the number of toppings is " + toppings.length);
+  return(price + this.toppings.length)
+};
+
 //ui logic
 $(document).ready(function() {
   $("form.form").submit(function(event) {
@@ -16,5 +21,8 @@ $(document).ready(function() {
   });
   let pizzaObject = new Pizza(sizePick, toppingsPick, 10);
   console.log(pizzaObject);
-  });
+  
+  price1 = (pizzaObject.sizePrice);
+  console.log("the price is " + price1)
+});
 });
