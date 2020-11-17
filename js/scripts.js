@@ -4,11 +4,9 @@ this.size = size;
 this.toppings = toppings;
 this.price = price;
 };
-//variables to adjust base cost and price per topping
-baseCost = 10;
-perTopping = 1;
+
 Pizza.prototype.toppingsPrice = function() {
-  this.price = (((this.toppings.length) * perTopping) + this.price);
+  this.price = (this.toppings.length + this.price);
 };
 Pizza.prototype.sizePrice = function() {
   if (this.size === "medium") {
@@ -26,7 +24,7 @@ $(document).ready(function() {
   $(".toppings:checked").each(function(){
     toppingsPick.push($(this).val());
   });
-    let pizzaObject = new Pizza(sizePick, toppingsPick, baseCost);
+    let pizzaObject = new Pizza(sizePick, toppingsPick, 10);
     console.log(pizzaObject);
     pizzaObject.toppingsPrice();
     pizzaObject.sizePrice();
