@@ -25,7 +25,6 @@ $(document).ready(function() {
     toppingsPick.push($(this).val());
   });
     let pizzaObject = new Pizza(sizePick, toppingsPick, 10);
-    console.log(pizzaObject);
     pizzaObject.toppingsPrice();
     pizzaObject.sizePrice();
     $("p").text("Based on the toppings and size your price is $" + pizzaObject.price);
