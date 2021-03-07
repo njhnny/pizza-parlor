@@ -29,5 +29,6 @@ $(document).ready(function() {
     pizzaObject.sizePrice();
     $("p").text("Based on the toppings and size your price is $" + pizzaObject.price);
     $("form.form").hide(1000);
+    $("#reset").show();
   });
 });
